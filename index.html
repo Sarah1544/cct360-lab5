@@ -1,29 +1,41 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>New York Soundscape - Lab 5</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1>New York Soundscape</h1>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New York Soundscape</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>New York Soundscape</h1>
+    <p id="story">One minute in New York. Press play and the photo follows the sound.</p>
 
-  <div class="media-container">
-    <audio id="soundscape" controls>
-      <source src="audio/soundscape.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
+    <img id="photo" src="images/bridge.jpg" alt="New York" height="360" />
+    <p id="caption">Walking over the Manhattan Bridge at sunset</p>
+
+    <audio id="player" controls>
+      <source src="audio/soundscape.mp3" type="audio/mpeg" />
+      This browser does not support audio.
     </audio>
-  </div>
+    <br />
+    <button id="playBtn">Play</button>
+    <button id="pauseBtn">Pause</button>
+    <button id="stopBtn">Stop</button>
+    <button id="downBtn">Quieter</button>
+    <button id="upBtn">Louder</button>
+    <p id="message">Press play to start</p>
 
-  <div class="visual-container">
-    <img id="visual-1" class="visual" src="images/bridge.jpg" alt="Manhattan Bridge">
-    <img id="visual-2" class="visual" src="images/diner.jpg" alt="Times Square Diner">
-    <img id="visual-3" class="visual" src="images/night.jpg" alt="Times Square Night">
-  </div>
+    <p id="jump-title">Jump to a moment</p>
+    <img id="thumb-bridge" class="thumb" src="images/bridge.jpg" alt="bridge" height="90" />
+    <img id="thumb-diner" class="thumb" src="images/diner.jpg" alt="diner" height="90" />
+    <img id="thumb-ferry" class="thumb" src="images/liberty.jpg" alt="ferry" height="90" />
+    <img id="thumb-night" class="thumb" src="images/night.jpg" alt="night" height="90" />
 
-  <div id="status">Ready to play</div>
+    <div id="sources">
+      <p>Photos by Sarah Khan. Sounds are Creative Commons field recordings from radio aporee on the Internet Archive:</p>
+      <p>Manhattan Bridge Walk (marialab24, public domain) &middot; McDonald's Times Square order numbers (Peter Stets, public domain) &middot; NYC Ferry, Rockaway Beach to Manhattan (Carlo Patrao, CC BY 3.0) &middot; Times Square rainy morning (Peter Stets, public domain)</p>
+    </div>
 
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

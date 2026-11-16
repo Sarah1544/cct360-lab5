@@ -33,9 +33,9 @@ audio {
 .visual {
   width: 150px;
   height: 150px;
-  background: linear-gradient(45deg, #ff006e, #8338ec);
   border-radius: 10px;
   transition: all 0.1s ease;
+  object-fit: cover;
 }
 
 .visual.playing {
